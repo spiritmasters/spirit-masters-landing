@@ -1,28 +1,25 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
     background-color: #000;
+    color: #fff;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: #2C2C2C;
+    color: #D4AF37;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -30,34 +27,31 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #D4AF37;
     font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #FFD700;
 }
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: #A50021;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 20px 0;
 }
 
 .cta-button {
-    background-color: #FFD700;
-    color: #000;
+    background-color: #A50021;
+    color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -65,14 +59,68 @@ nav ul li a:hover {
 }
 
 .cta-button:hover {
-    background-color: #e6c200;
+    background-color: #8C001D;
 }
 
 section {
     padding: 50px 20px;
-    text-align: center;
 }
 
+section h2 {
+    font-size: 2.5rem;
+    color: #A50021;
+    margin-bottom: 20px;
+    text-align: left;
+}
 
-::contentReference[oaicite:0]{index=0}
- 
+section p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #D4AF37;
+    border-radius: 5px;
+    background-color: #111;
+    color: #fff;
+}
+
+form button {
+    background-color: #A50021;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #8C001D;
+}
+
+footer {
+    background-color: #2C2C2C;
+    color: #D4AF37;
+    padding: 20px;
+    text-align: center;
+}
