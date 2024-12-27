@@ -5,6 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spirit Masters - Elevate Your Event Experience</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            color: #FFD700;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #FFD700;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: #FFD700;
+            animation: fadeIn 2s;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .cta-button {
+            background-color: #FFD700;
+            color: #000;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta-button:hover {
+            background-color: #e6be00;
+        }
+        .features, .form-section {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #111;
+        }
+        .features h2, .form-section h2 {
+            font-size: 2.5rem;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+        .features p, .form-section p {
+            margin-bottom: 20px;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea, form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1rem;
+            border: 1px solid #FFD700;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #FFD700;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        form button:hover {
+            background-color: #e6be00;
+        }
+        footer {
+            background-color: #333;
+            color: #FFD700;
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .gallery img {
+            margin: 10px;
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,16 +139,12 @@
     <section class="hero">
         <h1>Elevate Your Event Experience</h1>
         <p>Unforgettable events start with the perfect bar setup. Let Spirit Masters bring magic to your celebrations.</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
+        <a href="#form" class="cta-button">Get in Touch</a>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>We specialize in creating unforgettable memories with world-class bartending services. Our expert mixologists craft mouth-watering cocktails tailored to your taste, ensuring every sip is a delight.</p>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
+    <section class="features">
+        <h2>Why Choose Spirit Masters?</h2>
+        <p>Experience professionalism, creativity, and impeccable service.</p>
         <ul>
             <li>Customizable bar setups for any event.</li>
             <li>Expert mixologists and premium ingredients.</li>
@@ -40,12 +152,14 @@
         </ul>
     </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <!-- Add images here -->
+    <section class="gallery" id="gallery">
+        <h2>Our Work</h2>
+        <img src="gallery1.jpg" alt="Event setup">
+        <img src="gallery2.jpg" alt="Cocktail drinks">
+        <img src="gallery3.jpg" alt="Mixologists at work">
     </section>
 
-    <section id="contact" class="form-section">
+    <section class="form-section" id="contact">
         <h2>Contact Us</h2>
         <p>Tell us about your event, and we'll make it extraordinary.</p>
         <form>
